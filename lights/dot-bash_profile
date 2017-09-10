@@ -1,6 +1,6 @@
 # Debug Messsages ------------------------------------------------
-# echo -e "Kernel Information: " `uname -smr`
-echo 'echo from ~/.bash_profile -> /Users/apollotang/1/1-sy/configurations/bash/dot-bash_profile_lights'
+echo -e "Kernel Information: " `uname -smr`
+echo 'echo from ~/.bash_profile -> ~/Users/apollotang/1/1-sy/configurations/bash/lights/dot-bash_profile'
 
 ##
 # Notes: ---------------------------------------------------------
@@ -49,28 +49,29 @@ echo 'echo from ~/.bash_profile -> /Users/apollotang/1/1-sy/configurations/bash/
 ##
 # [MacPorts] ----------------------------------------------------
 #
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH                         # OS-X Specific, with MacPorts installed
 # export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:$PATH  # OS-X Specific, with MacPorts and MySQL installed
+# export PATH=/opt/local/bin:/opt/local/sbin:$PATH                       # OS-X Specific, with MacPorts installed
+  export PATH=$PATH:/opt/local/bin:/opt/local/sbin                       # Homebrew has precedance over MacPorts
 #
 
 
 ##
-# Start -  For  bash completion
+# START - For bash completion
 # installation using mac port, see:
 # https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion
 if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
   . /opt/local/etc/profile.d/bash_completion.sh
 fi
-# End   -  For  bash completion
+# END   - For bash completion
 
 
 ##
-# Start -  git completion
+# START - git completion
 # see: http://code-worrier.com/blog/autocomplete-git/
 if [ -f ~/opt/script/git-completion.bash ]; then
   . ~/opt/script/git-completion.bash
 fi
-# End  -  git completion
+# END  - git completion
 
 
 ##
@@ -80,22 +81,41 @@ fi
 
 
 ##
-# Start -  GoodSync
+# START - GoodSync
 export PATH="/Users/apollotang/Library/Application Support/GoodSync":$PATH
 export PATH="/Library/Application Support/GoodSync":$PATH
-# End   -  GoodSync
+# END   - GoodSync
 
 
 ##
-# Start -  Google Cloud SDK
+# START - Google Cloud SDK
 # The next line updates PATH for the Google Cloud SDK.
 source '/Users/apollotang/google-cloud-sdk/path.bash.inc'
 # The next line enables bash completion for gcloud.
 source '/Users/apollotang/google-cloud-sdk/completion.bash.inc'
-# End   -  Google Cloud SDK
+# END   - Google Cloud SDK
+
+
+##
+# START - Scala
+export SCALA_HOME="$HOME/opt/local/scala-2.11.2/bin"  #TODO move this into .bashrc_init_light ?
+# END   - Scala
+
 
 # export PYENV_ROOT="$HOME/.pyenv"
 # export PATH="$PYENV_ROOT/bin:$PATH"
 # eval "$(pyenv init -)"
 
+
+
+#/ Alias that Split path into line -------------------------------------------------
+#/
+#/ for linux
+#  alias info-path='echo $PATH | sed s/:/\\n/g | less'
+#/   ref: stackoverflow.com/questions/18234378/using-sed-to-split-a-string-with-a-delimiter
+#/
+#/  for osx
+alias info-path="echo $PATH | sed 's/:/\\`echo -e '\n\r'`/g' | cat"  #for osx
+#/  in the above, not sure why "\\" before first "`" but not b4 the second "`"
+#/  ref http://stackoverflow.com/questions/723157/how-to-insert-a-newline-in-front-of-a-pattern
 
