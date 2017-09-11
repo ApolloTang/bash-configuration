@@ -1,10 +1,10 @@
 # Debug Messsages -----------------------------------------------
 echo 'echo from ~/1/1-sy/configurations/bash/lights/bashrc_device.sh'
 
-
 export IAM=lights
 export PLATFORM=mac
 export XDG_CONFIG_HOME="/Users/apollotang/.config"
+
 
 ## Path
 # @NOTE: reverse order: the last one will be prepended to the path
@@ -17,6 +17,7 @@ PATH=/Users/apollotang/opt/local/anaconda2/bin:$PATH
 PATH=$PATH:"/usr/local/Cellar/neovim-dot-app/HEAD/bin/gnvim"
 export PATH
 
+
 ##
 # Ruby
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
@@ -28,10 +29,17 @@ export PATH=${PATH}:${ANDROID_HOME}/emulator  # this must be before tools, else 
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
+
 ##
 # for nvm
 export NVM_DIR="/Users/apollotang/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+
+##
+# Scala
+export SCALA_HOME="$HOME/opt/local/scala-2.11.2/bin"
+
 
 ##/ Project directory
 

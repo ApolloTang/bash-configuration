@@ -16,6 +16,7 @@ PATH=$PATH:"$HOME/opt/local/adt-bundle-mac-x86_64-20140702/sdk/platform-tools"
 PATH=$PATH:"$HOME/opt/devtools/autotools-bin/bin"
 export PATH
 
+
 ##
 # Misc
 export editor_main=mvim
@@ -25,22 +26,31 @@ shopt -s checkwinsize   # After each command, checks the windows size and change
 set -o vi               # Use Vim mode
 export LESS=-RFX        # color for Less
 
+
+##
+# # START - git completion
+# installation using mac port, see:
+# https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+# # END  - git completion
+
+
+# using the above so coment this one out
+# ##
+# # START - git completion
+# if [ -f $dir_scripts1/git-completion/main.bash ]; then
+#   . $dir_scripts1/git-completion/main.bash
+# fi
+# # END  - git completion
+
+
 ##
 # bash completion settings (actually, these are readline settings)
 bind "set completion-ignore-case on" # note: bind used instead of sticking these in .inputrc
 bind "set bell-style none" # no bell
 bind "set show-all-if-ambiguous On" # show list automatically, without double tab
-
-echo "xxxxxx $dir_scripts1";
-echo "xxxxxx $dir_scripts1/git-completion/main.bash";
-
-##
-# START - git completion
-# see: http://code-worrier.com/blog/autocomplete-git/
-if [ -f $dir_scripts1/git-completion/main.bash ]; then
-  . $dir_scripts1/git-completion/main.bash
-fi
-# END  - git completion
 
 
 ##

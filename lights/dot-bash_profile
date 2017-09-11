@@ -51,33 +51,8 @@ echo 'echo from ~/.bash_profile -> ~/Users/apollotang/1/1-sy/configurations/bash
 #
 # export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:$PATH  # OS-X Specific, with MacPorts and MySQL installed
 # export PATH=/opt/local/bin:/opt/local/sbin:$PATH                       # OS-X Specific, with MacPorts installed
-  export PATH=$PATH:/opt/local/bin:/opt/local/sbin                       # Homebrew has precedance over MacPorts
+  export PATH=$PATH:/opt/local/bin:/opt/local/sbin                       # Use this one so that Homebrew has precedance over MacPorts
 #
-
-
-##
-# START - For bash completion
-# installation using mac port, see:
-# https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion
-if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
-  . /opt/local/etc/profile.d/bash_completion.sh
-fi
-# END   - For bash completion
-
-# ##
-# # START - git completion
-# # see: http://code-worrier.com/blog/autocomplete-git/
-# if [ -f ~/1/1-sy/scripts/git-completion/main.bash ]; then
-#   # . ~/opt/script/git-completion.bash
-#   . ~/1/1-sy/scripts/git-completion/main.bash
-# fi
-# # END  - git completion
-
-
-##
-# if [ -d ~/bin ]; then
-# 	export PATH=~/bin:$PATH  # add your bin folder to the path, if you have it.  It's a good place to add all your scripts
-# fi
 
 
 ##
@@ -96,10 +71,6 @@ source '/Users/apollotang/google-cloud-sdk/completion.bash.inc'
 # END   - Google Cloud SDK
 
 
-##
-# START - Scala
-export SCALA_HOME="$HOME/opt/local/scala-2.11.2/bin"  #TODO move this into .bashrc_init_light ?
-# END   - Scala
 
 
 # export PYENV_ROOT="$HOME/.pyenv"
@@ -118,4 +89,5 @@ export SCALA_HOME="$HOME/opt/local/scala-2.11.2/bin"  #TODO move this into .bash
 alias info-path="echo $PATH | sed 's/:/\\`echo -e '\n\r'`/g' | cat"  #for osx
 #/  in the above, not sure why "\\" before first "`" but not b4 the second "`"
 #/  ref http://stackoverflow.com/questions/723157/how-to-insert-a-newline-in-front-of-a-pattern
+
 
