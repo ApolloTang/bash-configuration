@@ -64,14 +64,14 @@ if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
 fi
 # END   - For bash completion
 
-
-##
-# START - git completion
-# see: http://code-worrier.com/blog/autocomplete-git/
-if [ -f ~/opt/script/git-completion.bash ]; then
-  . ~/opt/script/git-completion.bash
-fi
-# END  - git completion
+# ##
+# # START - git completion
+# # see: http://code-worrier.com/blog/autocomplete-git/
+# if [ -f ~/1/1-sy/scripts/git-completion/main.bash ]; then
+#   # . ~/opt/script/git-completion.bash
+#   . ~/1/1-sy/scripts/git-completion/main.bash
+# fi
+# # END  - git completion
 
 
 ##
