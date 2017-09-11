@@ -14,7 +14,9 @@ PATH=/Users/apollotang/opt/local/anaconda2/bin:$PATH
 #
 # @NOTE: normal order: the last one will be appended to the path
 #
+PATH=$PATH:"$HOME/opt/local/scala-2.11.2/bin"
 PATH=$PATH:"/usr/local/Cellar/neovim-dot-app/HEAD/bin/gnvim"
+PATH=$PATH:"$HOME/opt/devtools/autotools-bin/bin"
 export PATH
 
 

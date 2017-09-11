@@ -8,12 +8,11 @@ echo 'echo from ~/1/1-sy/configurations/bash/common/bashrc_common.sh'
 PATH="$HOME/script/bin2":$PATH
 PATH="$HOME/script/bin":$PATH
 PATH="$HOME/bin":$PATH
+PATH="$dir_sy1/bin":$PATH
 #
 # @NOTE: normal order: the last one will be appended to the path
 #
-PATH=$PATH:"$HOME/opt/local/scala-2.11.2/bin"   #TODO move this into .bashrc_init_light ?
-PATH=$PATH:"$HOME/opt/local/adt-bundle-mac-x86_64-20140702/sdk/platform-tools"
-PATH=$PATH:"$HOME/opt/devtools/autotools-bin/bin"
+# PATH=$PATH:"$HOME/opt/local/adt-bundle-mac-x86_64-20140702/sdk/platform-tools"
 export PATH
 
 
