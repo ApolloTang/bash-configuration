@@ -1,6 +1,6 @@
-# Debug Messsages ------------------------------------------------
-echo -e "Kernel Information: " `uname -smr`
-echo 'echo from ~/.bash_profile -> ~/Users/apollotang/1/1-sy/configurations/bash/lights/dot-bash_profile'
+# # Debug Messsages ------------------------------------------------
+# echo -e "Kernel Information: " `uname -smr`
+# echo 'echo from ~/.bash_profile -> ~/Users/apollotang/1/1-sy/configurations/bash/lights/dot-bash_profile'
 
 ##
 # Notes: ---------------------------------------------------------

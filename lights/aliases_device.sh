@@ -1,5 +1,5 @@
-# Debug Messsages -----------------------------------------------
-echo 'echo from ~/1/1-sy/configurations/bash/lights/aliases_device.sh'
+# # Debug Messsages -----------------------------------------------
+# echo 'echo from ~/1/1-sy/configurations/bash/lights/aliases_device.sh'
 
 ################################################
 #

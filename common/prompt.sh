@@ -1,5 +1,5 @@
-# Debug Messsages ------------------------------------------------
-echo 'echo from ~/1/1-sy/configurations/bash/common/prompt.sh'
+# # Debug Messsages ------------------------------------------------
+# echo 'echo from ~/1/1-sy/configurations/bash/common/prompt.sh'
 
 #/ Prompts ----------------------------------------------------------
 # export PS1="\[${COLOR_GREEN}\]\w > \[${COLOR_NC}\]"  # Primary prompt with only a path

@@ -1,6 +1,5 @@
-
-# Debug Messsages -----------------------------------------------
-echo 'echo from ~/1/1-sy/configurations/bash/common/start_ssh_agent.sh'
+# # Debug Messsages -----------------------------------------------
+# echo 'echo from ~/1/1-sy/configurations/bash/common/start_ssh_agent.sh'
 
 # set up ssh-agent -------------------------------------------------------
 

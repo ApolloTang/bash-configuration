@@ -1,5 +1,5 @@
-# Debug Messsages -----------------------------------------------
-echo 'echo from ~/1/1-sy/configurations/bash/common/aliases_common.sh'
+# # Debug Messsages -----------------------------------------------
+# echo 'echo from ~/1/1-sy/configurations/bash/common/aliases_common.sh'
 
 ###
 ###  Must have

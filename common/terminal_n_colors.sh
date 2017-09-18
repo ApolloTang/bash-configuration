@@ -1,5 +1,5 @@
-# Debug Messsages ------------------------------------------------
-echo 'echo from ~/1/1-sy/configurations/bash/common/terminal-n-colors'
+# # Debug Messsages ------------------------------------------------
+# echo 'echo from ~/1/1-sy/configurations/bash/common/terminal-n-colors'
 
 
 #export TERM=xterm-color
