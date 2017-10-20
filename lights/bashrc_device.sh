@@ -42,6 +42,10 @@ export NVM_DIR="/Users/apollotang/.nvm"
 # Scala
 export SCALA_HOME="$HOME/opt/local/scala-2.11.2/bin"
 
+##
+# local directory
+export dir_server_lib="/Users/apollotang/0/z-local/vendor-lib/"
+
 
 ##/ Project directory
 
