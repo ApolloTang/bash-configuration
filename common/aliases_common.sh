@@ -57,6 +57,7 @@ alias gld="git log --graph --all --pretty=format:\"%C(yellow) %h %C(auto) %d %C(
 alias gmerge='git merge --no-ff '
 alias gdfni='git diff --no-index '
 
+alias g-stash-ls='git stash list --pretty=format:"%C(red)%h%C(reset) - %C(dim yellow)(%C(bold magenta)%gd%C(dim yellow))%C(reset) %<(70,trunc)%s %C(green)(%cr) %C(bold blue)<%an>%C(reset)"'
 
 #/  Utitlities -----------------------------------------------------------
 alias aliasl="alias | less"
