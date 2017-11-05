@@ -5,6 +5,10 @@ export IAM=lights
 export PLATFORM=mac
 export XDG_CONFIG_HOME="/Users/apollotang/.config"
 
+## Enable Glob support
+# https://gist.github.com/reggi/475793ea1846affbcfe8
+shopt -s globstar
+
 
 ## Path
 # @NOTE: reverse order: the last one will be prepended to the path
