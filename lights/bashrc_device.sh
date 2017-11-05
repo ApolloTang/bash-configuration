@@ -10,7 +10,7 @@ export XDG_CONFIG_HOME="/Users/apollotang/.config"
 # @NOTE: reverse order: the last one will be prepended to the path
 #
 PATH="$HOME/Applications/kdiff3.app/Contents/MacOS":$PATH   # kdiff3
-PATH=/Users/apollotang/opt/local/anaconda2/bin:$PATH
+# PATH=/Users/apollotang/opt/local/anaconda2/bin:$PATH
 #
 # @NOTE: normal order: the last one will be appended to the path
 #
