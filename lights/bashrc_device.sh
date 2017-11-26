@@ -52,6 +52,9 @@ export dir_server_lib="/Users/apollotang/0/z-local/vendor-lib/"
 
 
 ##/ Project directory
+if [ -f "$dir_config_device/project-paths.sh" ]; then
+  . "$dir_config_device/project-paths.sh"
+fi
 
 ##/ Run things
 # archey
