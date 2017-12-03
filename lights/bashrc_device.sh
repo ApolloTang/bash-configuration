@@ -51,9 +51,9 @@ export SCALA_HOME="$HOME/opt/local/scala-2.11.2/bin"
 export dir_server_lib="/Users/apollotang/0/z-local/vendor-lib/"
 
 
-##/ Project directory
-if [ -f "$dir_config_device/project-paths.sh" ]; then
-  . "$dir_config_device/project-paths.sh"
+##/ Local only
+if [ -f "$dir_config_device/local-only.sh" ]; then
+  . "$dir_config_device/local-only.sh"
 fi
 
 ##/ Run things
