@@ -52,8 +52,8 @@ export dir_server_lib="/Users/apollotang/0/z-local/vendor-lib/"
 
 
 ##/ Local only
-if [ -f "$dir_config_device/local-only.sh" ]; then
-  . "$dir_config_device/local-only.sh"
+if [ -f "$dir_config_device/git-sub/local-only.sh" ]; then
+  . "$dir_config_device/git-sub/local-only.sh"
 fi
 
 ##/ Run things
