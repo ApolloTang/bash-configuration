@@ -5,6 +5,7 @@ export IAM=lights
 export PLATFORM=mac
 export XDG_CONFIG_HOME="/Users/apollotang/.config"
 
+
 ## Enable Glob support
 # https://gist.github.com/reggi/475793ea1846affbcfe8
 shopt -s globstar
@@ -14,7 +15,7 @@ shopt -s globstar
 # @NOTE: reverse order: the last one will be prepended to the path
 #
 PATH="$HOME/Applications/kdiff3.app/Contents/MacOS":$PATH   # kdiff3
-# PATH=/Users/apollotang/opt/local/anaconda2/bin:$PATH
+PATH=/Users/apollotang/opt/local/anaconda2/bin:$PATH
 #
 # @NOTE: normal order: the last one will be appended to the path
 #
@@ -51,7 +52,8 @@ export SCALA_HOME="$HOME/opt/local/scala-2.11.2/bin"
 export dir_server_lib="/Users/apollotang/0/z-local/vendor-lib/"
 
 
-##/ Local only
+##
+#/ Import configuration that change frequently or private
 if [ -f "$dir_config_device/git-sub-local/local-only.sh" ]; then
   . "$dir_config_device/git-sub-local/local-only.sh"
 fi
