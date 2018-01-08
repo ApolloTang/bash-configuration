@@ -38,6 +38,7 @@ alias gps='git push'
 alias gc='git commit -v'
 alias gca='git commit -v -a'
 alias gb='git branch'
+alias gbc='git rev-parse --abbrev-ref HEAD'   #get current branch
 alias gba='git branch -a'
 alias gmt='git mergetool --tool p4merge'
 alias gdf='git diff --no-ext-diff'
