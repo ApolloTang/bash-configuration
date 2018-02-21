@@ -4,6 +4,7 @@
 export IAM=lights
 export PLATFORM=mac
 export XDG_CONFIG_HOME="/Users/apollotang/.config"
+export RIPGREP_CONFIG_PATH="/Users/apollotang/1/1-sy/configurations/ripgrep/dot.ripgreprc"
 
 
 ## Enable Glob support
