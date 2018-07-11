@@ -15,10 +15,11 @@ shopt -s globstar
 ## Path
 # @NOTE: reverse order: the last one will be prepended to the path
 #
-PATH="$HOME/1/1-sy/scripts/bin":$PATH   # custom scripts link to here
+PATH="$HOME/1/1-sy/scripts/bin":$PATH                       # custom scripts link to here
 PATH="$HOME/Applications/kdiff3.app/Contents/MacOS":$PATH   # kdiff3
 # PATH=/Users/apollotang/opt/local/anaconda2/bin:$PATH
 PATH=/Users/apollotang/opt/local/anaconda3/bin:$PATH
+PATH=/usr/local/Cellar/coreutils/8.30/bin:$PATH             # manually link coreutil b/c gsync has already symlinc to /Library/Application\ Support/GoodSync/gsync
 #
 # @NOTE: normal order: the last one will be appended to the path
 #
