@@ -128,5 +128,11 @@ alias find_ln_dotfile='find . -name ".*" -type l -maxdepth 1 -exec ls -al {} +'
 #
 alias rn='react-native '
 
+
+# ------------------------------------------------------------------
+# xcode
+#
+alias simulator-ios='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/'
+
 ################################################
 #echo '.bash_aliases reading done'
