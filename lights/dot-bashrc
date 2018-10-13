@@ -1,8 +1,8 @@
 # # Debug Messsages -----------------------------------------------
 # echo 'echo from ~/.bashrc -> /Users/apollotang/1/1-sy/configurations/bash/lights/dot-bashrc'
 
-dir_config_device=$HOME/1/1-sy/configurations/bash/lights/
-dir_config_common=$HOME/1/1-sy/configurations/bash/common/
+dir_config_device=$HOME/1/1-sy/configurations/bash/lights
+dir_config_common=$HOME/1/1-sy/configurations/bash/common
 
 dir_sy1=$HOME/1/1-sy
 dir_scripts1=$HOME/1/1-sy/scripts
